@@ -1,5 +1,5 @@
 # Caja Hide - Extension for Caja to hide files without renaming them
-# Copyright (C) 2015,2016 Caja Hide authors.
+# Copyright (C) 2015-2016 Caja Hide authors.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

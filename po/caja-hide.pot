@@ -1,5 +1,5 @@
 # caja-hide.pot
-# Copyright (C) 2015,2016 Caja Hide authors
+# Copyright (C) 2015-2016 Caja Hide authors
 # This file is distributed under the same license as the caja-hide package.
 #
 #, fuzzy
