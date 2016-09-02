@@ -3,7 +3,7 @@ Nemo Hide
 
 Extension for Caja to hide files without renaming them. 
 
-Adapted from Nautilus Hide, Copyright (C) 2015 Bruno Nova <brunomb.nova@gmail.com> <https://bitbucket.org/brunonova/nautilus-hide/src#clone>, and Nemo Hide, copyright (C) 2015 KD2 (Emmanuel) <https://github.com/KDB2/Nemo-hide>.
+Adapted from Nautilus Hide, Copyright (C) 2015 Bruno Nova <brunomb.nova@gmail.com> <https://bitbucket.org/brunonova/nautilus-hide/src#clone>, and Nemo Hide, copyright (C) 2015 KDB2 (Emmanuel) <https://github.com/KDB2/Nemo-hide>.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
