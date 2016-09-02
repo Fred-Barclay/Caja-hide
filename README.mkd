@@ -45,7 +45,7 @@ hide a file, its name is added to the folder's `.hidden` file. When you choose
 to unhide it, the name is removed.
 Caja will automatically refresh upon hiding or unhiding a file so that the file will either disappear or re-appear.
 
-Please note that this can also be used to hide folders.
+Please note that Caja Hide can also be used to hide folders.
 
 
 Installation
