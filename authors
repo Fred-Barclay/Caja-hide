@@ -1,0 +1,22 @@
+Caja Hide authors:
+
+Fred-Barclay
+	- forked from Nemo to Caja
+
+Bruno Nova <brunomb.nova@gmail.com>
+	- original code for Nautilus
+
+KDB2 (Emmanuel) aka KillerdeBug
+	- forked Nautilus code to Nemo
+	- wrote README.mkd
+	- added build option for Debian
+	- refresh Nemo automatically
+
+==================================
+Translators:
+
+Okki <okki@gnomelibre.fr>, 2015.
+	- French translation
+
+Bruno Nova <brunomb.nova@gmail.com>, 2015
+	- Portugese translation

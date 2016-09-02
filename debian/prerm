@@ -1,5 +1,5 @@
 #!/bin/sh
-# prerm script for nemo-hide
+# prerm script for caja-hide
 #
 # see: dh_installdeb(1)
 
@@ -7,7 +7,7 @@ set -e
 
 case "$1" in
     remove|upgrade|deconfigure)
-        rm -f /var/lib/update-notifier/user.d/nemo-hide-notification
+        rm -f /var/lib/update-notifier/user.d/caja-hide-notification
     ;;
 
     failed-upgrade)

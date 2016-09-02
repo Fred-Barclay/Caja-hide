@@ -1,11 +1,11 @@
-Source: nemo-hide
-Section: gnome
+Source: caja-hide
+Section: mate
 Priority: extra
-Maintainer: Emmanuel C. <>
+Maintainer: Fred Barclay. <>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
 
-Package: nemo-hide
+Package: caja-hide
 Architecture: all
-Depends: ${misc:Depends}, nemo (>= 1), python-nemo (>= 1.0), xautomation (>=1.07)
-Description: Context menu hide extension for Nemo file manager. Simple context menu file hidding extension for Nemo 2.4 and above. Hidding is performed by the use of a .hidden file enabling hidding of files and folders without renaming them.
+Depends: ${misc:Depends}, caja (>= 1.08), python-caja (>= 1.08), xautomation (>=1.07)
+Description: Context menu hide extension for Caja file manager.

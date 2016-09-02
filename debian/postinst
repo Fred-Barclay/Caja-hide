@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for nemo-hide
+# postinst script for caja-hide
 #
 # see: dh_installdeb(1)
 
@@ -8,7 +8,7 @@ set -e
 unud=/var/lib/update-notifier/user.d
 
 if [ -d $unud ]; then
-	cp /usr/share/nemo-compare/nemo-hide-notification \
+	cp /usr/share/caja-compare/caja-hide-notification \
 		/var/lib/update-notifier/user.d/
 	touch /var/lib/update-notifier/dpkg-run-stamp
 fi

@@ -1,5 +1,5 @@
-# Nemo Hide - Extension for Nemo to hide files without renaming them
-# Adapted from Nautilus Hide Copyright (C) 2015 Bruno Nova <brunomb.nova@gmail.com>
+# Caja Hide - Extension for Caja to hide files without renaming them
+# Copyright (C) 2015,2016 Caja Hide authors.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,11 +15,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
-from gi.repository import Nemo, GObject
+from gi.repository import Caja, GObject
 from gettext import ngettext, locale, bindtextdomain, textdomain
 
-class NemoHide(Nemo.MenuProvider, GObject.GObject):
-	"""Simple Nemo extension that adds some actions to the context menu to
+class CajaHide(Caja.MenuProvider, GObject.GObject):
+	"""Simple Caja extension that adds some actions to the context menu to
 	hide and unhide files, by adding/removing their names to/from the folder's
 	'.hidden' file."""
 	def __init__(self):
@@ -90,12 +90,12 @@ class NemoHide(Nemo.MenuProvider, GObject.GObject):
 			locale.setlocale(locale.LC_ALL, "")
 		except:
 			pass
-		bindtextdomain("Nemo-hide", "@CMAKE_INSTALL_PREFIX@/share/locale")
-		textdomain("Nemo-hide")
+		bindtextdomain("Caja-hide", "@CMAKE_INSTALL_PREFIX@/share/locale")
+		textdomain("Caja-hide")
 
 	def _create_hide_item(self, files, hidden_path, hidden):
 		"""Creates the 'Hide file(s)' menu item."""
-		item = Nemo.MenuItem(name="NemoHide::HideFile",
+		item = Caja.MenuItem(name="CajaHide::HideFile",
 		                         label=ngettext("_Hide File", "_Hide Files", len(files)),
 		                         tip=ngettext("Hide this file", "Hide these files", len(files)))
 		item.connect("activate", self._hide_run, files, hidden_path, hidden)
@@ -103,7 +103,7 @@ class NemoHide(Nemo.MenuProvider, GObject.GObject):
 
 	def _create_unhide_item(self, files, hidden_path, hidden):
 		"""Creates the 'Unhide file(s)' menu item."""
-		item = Nemo.MenuItem(name="NemoHide::UnhideFile",
+		item = Caja.MenuItem(name="CajaHide::UnhideFile",
 		                         label=ngettext("Un_hide File", "Un_hide Files", len(files)),
 		                         tip=ngettext("Unhide this file", "Unhide these files", len(files)))
 		item.connect("activate", self._unhide_run, files, hidden_path, hidden)
@@ -120,7 +120,7 @@ class NemoHide(Nemo.MenuProvider, GObject.GObject):
 				with open(hidden_path, "w") as f:
 					for file in hidden:
 						f.write(file + '\n')
-						os.system("xte 'keydown Control_L' 'key R' 'keyup Control_L'")#refresh of Nemo
+						os.system("xte 'keydown Control_L' 'key R' 'keyup Control_L'")#refresh of Caja
 		except:
 			print("Failed to delete or write to {}!".format(hidden_path))
 

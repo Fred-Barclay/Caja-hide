@@ -1,3 +1,9 @@
+caja-hide (0.9.0) Betsy; urgency=low
+
+	* Port to Caja
+
+ -- Fred Barclay <> Fri, 02 September 2016 06:00:00 +1000
+
 nemo-hide (1.0.0) Betsy; urgency=low
 
   * Port to Nemo

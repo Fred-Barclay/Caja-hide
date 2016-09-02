@@ -1,4 +1,4 @@
 debian/tmp/usr/share/locale
-/data/nemo-hide-notification /usr/share/nemo-hide/
-/src/nemo-hide.py /usr/share/nemo-hide/
+/data/caja-hide-notification /usr/share/caja-hide/
+/src/caja-hide.py /usr/share/caja-hide/
 
