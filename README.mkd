@@ -1,7 +1,7 @@
-Nemo Hide
+Caja Hide
 =============
 
-Extension for Caja to hide files without renaming them. 
+Extension for Caja to hide files without renaming them.
 
 Adapted from Nautilus Hide, copyright (C) 2015 Bruno Nova <brunomb.nova@gmail.com> <https://bitbucket.org/brunonova/nautilus-hide/src#clone>, and Nemo Hide, copyright (C) 2015 KDB2 (Emmanuel) <https://github.com/KDB2/Nemo-hide>.
 
@@ -27,9 +27,9 @@ folder.
 Details
 -------
 
-In Linux, and other UNIX like systems, a file with a name that starts by a
+In Linux, and other UNIX-like systems, a file with a name that starts by a
 dot ('.') is considered a *hidden file*.
-Some file managers also hide files that end with a tilde ('~'), with are
+Some file managers also hide files that end with a tilde ('~'), which are
 considered *backup files*.
 
 To hide an existing file, you would have to rename it. That's not always
@@ -37,13 +37,15 @@ feasible or desirable.
 
 Some file managers, like Caja, offer an **alternative way of hiding files**:
 you create a text file that lists, line-by-line, the names of all the files you
-want to hide and save it in that folder with the name `.hidden`. The next time
+want to hide in a particular folder (directory) and save it in that folder with the name `.hidden`. The next time
 you open or refresh that folder, those files will not be visible.
 
 This extension simply uses that `.hidden` file to hide files. When you choose to
 hide a file, its name is added to the folder's `.hidden` file. When you choose
 to unhide it, the name is removed.
-You will have to refresh the folder to see the result.
+Caja will automatically refresh upon hiding or unhiding a file so that the file will either disappear or re-appear.
+
+Please note that this can also be used to hide folders.
 
 
 Installation
@@ -54,4 +56,3 @@ dpkg-buildpackage
 cd ..
 
 sudo dpkg -i *.deb
-
