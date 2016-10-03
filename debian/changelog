@@ -3,14 +3,14 @@ caja-hide (0.9.1) Betsy; urgency=low
   * development version
   * Documentation and copyright improvements
 
- -- Fred Barclay <> Sat, 03 September 2016 02:00:00 +1000
+ -- Fred Barclay <>  Sat, 03 September 2016 02:00:00 +1000
 
 
 caja-hide (0.9.0) Betsy; urgency=low
 
   * Port to Caja
 
- -- Fred Barclay <> Fri, 02 September 2016 06:00:00 +1000
+ -- Fred Barclay <>  Fri, 02 September 2016 06:00:00 +1000
 
 
 nemo-hide (1.0.0) Betsy; urgency=low
