@@ -50,9 +50,30 @@ Please note that Caja Hide can also be used to hide folders.
 
 Installation
 ------------
+#### Dependencies:
+ - caja
+ - python 2.7 or greater
+ - python-caja
+ - xautomation
 
+### Debian
+a) Download source code  
+```
+git clone https://github.com/Fred-Barclay/Caja-Hide.git
+cd Caja-Wipe
 dpkg-buildpackage
+cd .. && sudo dpkg -i install caja-hide_0.8.9_all.deb
+```
+b) Restart caja  
+`caja -q`
 
-cd ..
 
-sudo dpkg -i *.deb
+### Other Distros (per-user installation)
+```
+mkdir -r ~/.local/share/caja-python/extensions/
+git clone https://github.com/Fred-Barclay/Caja-Hide.git
+cd Caja-Wipe/src
+cp caja-wipe.py ~/.local/share/caja-python/extensions/caja-hide.py
+```
+Restart Caja  
+`caja -q`
