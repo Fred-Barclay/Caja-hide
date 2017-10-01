@@ -70,10 +70,10 @@ b) Restart caja
 
 ### Other Distros (per-user installation)
 ```
-mkdir -r ~/.local/share/caja-python/extensions/
+mkdir -p ~/.local/share/caja-python/extensions/
 git clone https://github.com/Fred-Barclay/Caja-Hide.git
-cd Caja-Wipe/src
-cp caja-wipe.py ~/.local/share/caja-python/extensions/caja-hide.py
+cd Caja-Hide/src
+cp caja-hide.py ~/.local/share/caja-python/extensions/caja-hide.py
 ```
 Restart Caja  
 `caja -q`
