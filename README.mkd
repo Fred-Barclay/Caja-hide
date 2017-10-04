@@ -51,9 +51,10 @@ Please note that Caja Hide can also be used to hide folders.
 Installation
 ------------
 #### Dependencies:
+Install these first.
  - caja
- - python 2.7 or greater
- - python-caja
+ - python 2.7
+ - python-caja (the python 2 version. Depending on your distro it may be called `python2-caja`)
  - xautomation
 
 ### Debian
